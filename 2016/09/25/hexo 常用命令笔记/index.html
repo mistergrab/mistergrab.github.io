@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo 常用命令笔记 | 方修武</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="2016年10月4日 纸上得来终觉浅，觉知此事要躬行 hexo  npm install hexo -g #安装 npm updata hexo -g #升级 hexo init #初始化 简写 hexo n &amp;quot;我的博客” == hexo new &amp;quot;我的博客&amp;quot; #新建文章 hexo p == hexo publish hexo g == hexo generate #">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo 常用命令笔记">
+<meta property="og:url" content="http://yoursite.com/2016/09/25/hexo 常用命令笔记/index.html">
+<meta property="og:site_name" content="方修武">
+<meta property="og:description" content="2016年10月4日 纸上得来终觉浅，觉知此事要躬行 hexo  npm install hexo -g #安装 npm updata hexo -g #升级 hexo init #初始化 简写 hexo n &amp;quot;我的博客” == hexo new &amp;quot;我的博客&amp;quot; #新建文章 hexo p == hexo publish hexo g == hexo generate #">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-22T08:01:48.364Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo 常用命令笔记">
+<meta name="twitter:description" content="2016年10月4日 纸上得来终觉浅，觉知此事要躬行 hexo  npm install hexo -g #安装 npm updata hexo -g #升级 hexo init #初始化 简写 hexo n &amp;quot;我的博客” == hexo new &amp;quot;我的博客&amp;quot; #新建文章 hexo p == hexo publish hexo g == hexo generate #">
+  
+    <link rel="alternate" href="/atom.xml" title="方修武" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">方修武</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我见青山多妩媚 料青山见我应如是</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo 常用命令笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/25/hexo 常用命令笔记/" class="article-date">
+  <time datetime="2016-09-25T14:11:31.000Z" itemprop="datePublished">2016-09-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hexo 常用命令笔记
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>2016年10月4日</p>
+<p>纸上得来终觉浅，觉知此事要躬行</p>
+<p>hexo </p>
+<pre><code>npm install hexo -g #安装
+npm updata hexo -g #升级
+hexo init #初始化
+</code></pre><p>简写</p>
+<pre><code>hexo n &quot;我的博客” == hexo new &quot;我的博客&quot; #新建文章
+hexo p == hexo publish
+hexo g == hexo generate #生成
+hexo s == hexo server #启动服务预览
+hexo d == hexo deploy #部署
+</code></pre><p>服务器</p>
+<pre><code>hexo server #Hexo 会监视文件变动并自动更新，您无需重启服务器
+hexo server -s #静态模式
+hexo server -p 5000 #更改端口
+hexo server -i 192.168.1.1 #自定义IP
+
+hexo clean #清除缓存 网页正常情况下可以忽略此条命令
+hexo g #生成静态网页
+hexo d #开始部署
+</code></pre><p>监视文件变动</p>
+<pre><code>hexo generate #使用 Hexo 生成静态文件快速而且简单
+hexo generate --watch #监视文件变动
+</code></pre><p>完成后部署</p>
+<pre><code>两个命令的作用是相同的
+hexo generate --deploy
+hexo deploy --generate
+
+hexo deploy -g
+hexo server -g
+</code></pre><p>草稿</p>
+<pre><code>hexo publish [layout] &lt;title&gt;
+</code></pre><p>模版</p>
+<pre><code>hexo new &quot;postName&quot; #新建文章
+hexo new page &quot;pageName&quot; #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+hexo deploy #将.deploy目录部署到GitHub
+
+hexo new [layout] &lt;title&gt;
+hexo new photo &quot;My Gallery&quot;
+hexo new &quot;Hello World&quot; --lang tw
+</code></pre><p>变量        描述<br>layout    布局<br>title    标题<br>date    文件建立日期</p>
+<pre><code>title: 使用Hexo搭建个人博客
+layout: post
+date: 2014-03-03 19:07:43
+comments: true
+categories: Blog
+tags: [Hexo]
+keywords: Hexo, Blog
+description: 生命在于折腾，又把博客折腾到Hexo了。给Hexo点赞。
+</code></pre><p>模版（Scaffold）</p>
+<pre><code>hexo new photo &quot;My Gallery&quot;
+
+变量    描述
+layout    布局
+title    标题
+date    文件建立日期
+</code></pre><p>设置文章摘要</p>
+<pre><code>以上是文章摘要 &lt;!--more--&gt; 以下是余下全文
+</code></pre><p>写作</p>
+<pre><code>hexo new page &lt;title&gt;
+hexo new post &lt;title&gt;
+</code></pre><p>变量    描述<br>:title    标题<br>:year    建立的年份（4 位数）<br>:month    建立的月份（2 位数）<br>:i_month    建立的月份（去掉开头的零）<br>:day    建立的日期（2 位数）<br>:i_day    建立的日期（去掉开头的零）</p>
+<p>推送到服务器上</p>
+<pre><code>hexo n #写文章
+hexo g #生成
+hexo d #部署 #可与hexo g合并为 hexo d -g
+</code></pre><p>报错</p>
+<p>1.找不到git部署</p>
+<pre><code>ERROR Deployer not found: git
+</code></pre><p>解决方法</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>3.部署类型设置git</p>
+<p>hexo 3.0 部署类型不再是github，_config.yml 中修改</p>
+<pre><code># Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: git@***.github.com:***/***.github.io.git
+  branch: master
+</code></pre><ol>
+<li>xcodebuild</li>
+</ol>
+<p>xcode-select: error: tool ‘xcodebuild’ requires Xcode, but active developer directory ‘/Library/Developer/CommandLineTools’ is a command line tools instance</p>
+<pre><code>npm install bcrypt
+</code></pre><ol>
+<li>RSS不显示</li>
+</ol>
+<p>安装RSS插件</p>
+<pre><code>npm install hexo-generator-feed --save
+</code></pre><p>开启RSS功能</p>
+<p>编辑hexo/_config.yml，添加如下代码：</p>
+<pre><code>rss: /atom.xml #rss地址  默认即可
+</code></pre><p>开启评论</p>
+<p>1.我使用多说代替自带的评论，在多说 网站注册 &gt; 后台管理 &gt; 添加新站点 &gt; 工具 === 复制通用代码 里面有 short_name</p>
+<p> 1.在根目录 _config.yml 添加一行 disqus_shortname: jslite 是在多说注册时产生的<br> 2.复制到 themes\landscape\layout_partial\article.ejs<br>   把</p>
+<pre><code>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname){ %&gt;
+&lt;section id=&quot;comments&quot;&gt;
+&lt;div id=&quot;disqus_thread&quot;&gt;
+  &lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;//disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;% } %&gt;
+</code></pre><p>改为</p>
+<pre><code>&lt;% if (!index &amp;&amp; post.comments &amp;&amp; config.disqus_shortname){ %&gt;
+  &lt;section id=&quot;comments&quot;&gt;
+    &lt;!-- 多说评论框 start --&gt;
+    &lt;div class=&quot;ds-thread&quot; data-thread-key=&quot;&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;&quot; data-title=&quot;&lt;%= post.title %&gt;&quot; data-url=&quot;&lt;%= page.permalink %&gt;&quot;&gt;&lt;/div&gt;
+    &lt;!-- 多说评论框 end --&gt;
+    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    var duoshuoQuery = {short_name:&apos;&lt;%= config.disqus_shortname %&gt;&apos;};
+      (function() {
+        var ds = document.createElement(&apos;script&apos;);
+        ds.type = &apos;text/javascript&apos;;ds.async = true;
+        ds.src = (document.location.protocol == &apos;https:&apos; ? &apos;https:&apos; : &apos;http:&apos;) + &apos;//static.duoshuo.com/embed.js&apos;;
+        ds.charset = &apos;UTF-8&apos;;
+        (document.getElementsByTagName(&apos;head&apos;)[0] 
+         || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(ds);
+      })();
+      &lt;/script&gt;
+    &lt;!-- 多说公共JS代码 end --&gt;
+  &lt;/section&gt;
+&lt;% } %&gt;
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/09/25/hexo 常用命令笔记/" data-id="cjf2ofh2w0001vx53vyvm7gnz" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/10/07/第二篇博客/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          第二篇博客
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/22/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/07/第二篇博客/">第二篇博客</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/25/hexo 常用命令笔记/">hexo 常用命令笔记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Xiuwu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
